@@ -336,7 +336,7 @@ section {
   height: 100vh;
 }
 
-main section#faq {
+#faq {
   display: flex;
   align-items: center;
   background-image: url(../img/faq_bg2.jpg);
@@ -345,26 +345,26 @@ main section#faq {
 }
 
 
-main section#faq div {
+#faq div {
   flex-direction: column;
   gap: 50px;
   height: 100%;
 }
 
-main section#faq div h2 {
+#faq div h2 {
 
 }
 
-main section#faq div p {
+#faq div p {
   line-height: 1.6;
 }
 
-main section#faq div ul {
+#faq div ul {
   display: flex;
   gap: 20px;
 }
 
-main section#faq div ul li {
+#faq div ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -378,14 +378,14 @@ main section#faq div ul li {
   border: 1px solid transparent;
 }
 
-main section#faq div ul li h3 {
+#faq div ul li h3 {
   font-size: 18px;
   border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
   padding: 20px;
 }
 
-main section#faq div ul li::before {
+#faq div ul li::before {
   content: "1";
   width: 30px;
   height: 30px;
@@ -397,42 +397,42 @@ main section#faq div ul li::before {
   align-items: center;
 }
 
-main section#faq div ul li:nth-child(2)::before {
+#faq div ul li:nth-child(2)::before {
   content: "2";
 }
 
-main section#faq div ul li:nth-child(3)::before {
+#faq div ul li:nth-child(3)::before {
   content: "3";
 }
 
-main section#faq div ul li:nth-child(4)::before {
+#faq div ul li:nth-child(4)::before {
   content: "4";
 }
 
-main section#faq div ul li p {
+#faq div ul li p {
   line-height: 1.6;
   font-size: 13px;
 }
 
-main section#faq div a {
+#faq div a {
   
 }
 
-main section#faq div ul li:hover {
+#faq div ul li:hover {
   border: 1px solid blue;
 }
 
-main section#faq div ul li:hover h3 {
+#faq div ul li:hover h3 {
   color: blue;
 }
 
 /* portfolio */
-section#portfolio {
+#portfolio {
   background-color: #363B3E;
   /* background-color: #fff; */
 }
 
-section#portfolio div {
+#portfolio div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -440,38 +440,38 @@ section#portfolio div {
   position: relative;
 }
 
-section#portfolio div h2 {
+#portfolio div h2 {
   color: #fff
 }
 
-section#portfolio div p {
+#portfolio div p {
   margin-top: -30px;
   /* transform: translateY(-100%); */
 }
 
-section#portfolio div ul {
+#portfolio div ul {
   display: flex;
   flex-wrap: wrap;
 }
 
-section#portfolio div ul li {
+#portfolio div ul li {
   width: 25%;
   height: 214px;
 }
 
-section#portfolio div ul li span {
+#portfolio div ul li span {
   
 }
 
-section#portfolio div ul li:nth-child(odd) {
+#portfolio div ul li:nth-child(odd) {
   background-color: rgba(255, 0, 0, 0.4);
 }
 
-section#portfolio div ul li:nth-child(even) {
+#portfolio div ul li:nth-child(even) {
   background-color: rgba(0, 0, 255, 0.4);
 }
 
-section#portfolio div ul li a {
+#portfolio div ul li a {
   display: block;
   width: 100%;
   height: 100%;
@@ -482,7 +482,7 @@ section#portfolio div ul li a {
   transition: 1s;
 }
 
-section#portfolio div ul li a span {
+#portfolio div ul li a span {
   border: 1px solid #fff;
   color: #fff;
   padding: 10px;
@@ -493,93 +493,93 @@ section#portfolio div ul li a span {
   transform: translateY(10%);
 }
 
-section#portfolio div ul li:hover a {
+#portfolio div ul li:hover a {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-section#portfolio div ul li:hover a span {
+#portfolio div ul li:hover a span {
   opacity: 1;
   transform: translateY(0%);
 }
 
-section#portfolio div ul li a span:hover {
+#portfolio div ul li a span:hover {
   background-color: #fff;
   color: #000;
 }
 
-section#portfolio div ul li:nth-child(1) {
+#portfolio div ul li:nth-child(1) {
   background-image: url(../img/dia.jpg);
   background-position: center;
   background-size: cover;
 }
 
-section#portfolio div ul li:nth-child(2) {
+#portfolio div ul li:nth-child(2) {
   background-image: url(../img/donga.jpg);
   background-position: center;
   background-size: cover;
 }
 
-section#portfolio div ul li:nth-child(3) {
+#portfolio div ul li:nth-child(3) {
   background-image: url(../img/music.jpg);
   background-position: center;
   background-size: cover;
 }
 
-section#portfolio div ul li:nth-child(4) {
+#portfolio div ul li:nth-child(4) {
   background-image: url(../img/ver3.jpg);
   background-position: center;
   background-size: cover;
 }
 
-section#portfolio div ul li:nth-child(5) {
+#portfolio div ul li:nth-child(5) {
   background-image: url(../img/coffee.jpg);
   background-position: center;
   background-size: cover;
 }
 
-section#portfolio div ul li:nth-child(6) {
+#portfolio div ul li:nth-child(6) {
   background-image: url(../img/esquisse.jpg);
   background-position: center;
   background-size: cover;
 }
 
-section#portfolio div ul li:nth-child(7) {
+#portfolio div ul li:nth-child(7) {
   background-image: url(../img/spotify.jpg);
   background-position: center;
   background-size: cover;
 }
 
-section#portfolio div ul li:nth-child(8) {
+#portfolio div ul li:nth-child(8) {
   background-image: url(../img/ventus\ auto.jpg);
   background-position: center;
   background-size: cover;
 }
 
-section#portfolio div ul li:nth-child(9) {
+#portfolio div ul li:nth-child(9) {
   background-image: url(../img/anadu.jpg);
   background-position: center;
   background-size: cover;
 }
 
-section#portfolio div ul li:nth-child(10) {
+#portfolio div ul li:nth-child(10) {
   background-image: url(../img/stag.jpg);
   background-position: center;
   background-size: cover;
 }
 
-section#portfolio div ul li:nth-child(11) {
+#portfolio div ul li:nth-child(11) {
   background-image: url(../img/ver3-2.jpg);
   background-position: center;
   background-size: cover;
 }
 
-section#portfolio div ul li:nth-child(12) {
+#portfolio div ul li:nth-child(12) {
   background-image: url(../img/kguard.jpg);
   background-position: center;
   background-size: cover;
 }
 
-section#portfolio div > a {
+#portfolio div > a {
   padding: 10px 25px;
   position: absolute;
   right: 0px;
@@ -587,7 +587,7 @@ section#portfolio div > a {
 }
 
 /* why */
-section#why {
+#why {
   background-color: #ddd;
   background-image: url(../img/woman.png), url(https://images.unsplash.com/photo-1454117096348-e4abbeba002c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-position: right bottom, center;
@@ -595,34 +595,34 @@ section#why {
   background-size: 25%, cover;
 }
 
-section#why div {
+#why div {
   height: 700px;
 }
 
-section#why div h2 {
+#why div h2 {
   text-align: center;
 }
 
-section#why div h2 span {
+#why div h2 span {
 
 }
 
-section#why div ul {
+#why div ul {
   
 }
 
-section#why div ul li {
+#why div ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
 
-section#why div ul li h3 {
+#why div ul li h3 {
   
 }
 
-section#why div ul li h3::before {
+#why div ul li h3::before {
   content: "";
   width: 81px;
   height: 69px;
@@ -634,7 +634,7 @@ section#why div ul li h3::before {
   margin: auto;
 }
 
-section#why div ul li p {
+#why div ul li p {
   text-align: center;
 }
 

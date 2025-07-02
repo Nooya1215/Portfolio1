@@ -1,227 +1,323 @@
-footer {
-  
+#footer {
+  height: 410px;
 }
 
-footer div.wrap {
-  display: grid;
-  grid-template-columns: 33% 1fr 1fr;
-  grid-template-rows: auto auto auto auto 100px;
-  padding-top: 20px;
-  row-gap: 10px;
-  column-gap: 20px;
-  background-color: #fafafa;
+#footer .wrap {
+
 }
 
-footer div.wrap h1 {
-  grid-column: 1;
-  grid-row: 1;
+#footer .wrap ul {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  padding: 0 15px;
+  height: 330px;
 }
 
-footer div.wrap h1 a {
-  
+#footer .wrap ul li {
+  width: calc(100% / 3);
 }
 
-footer div.wrap > h1+p { 
-  grid-column: 1;
-  grid-row: 2;
-}
-
-footer div.wrap address {
-  grid-column: 1;
-  grid-row: 3;
-}
-
-footer div.wrap address span {
-  
-}
-
-footer div.wrap address span a {
-  
-}
-
-footer div.wrap address span a::before {
-  content: "";
-  width: 20px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: -3px;
-  background-image: url(../img/svg/envelope-solid.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-right: 5px;
-}
-
-footer div.wrap div.sangdam {
-  grid-column: 2;
-  grid-row: 1 / span 4;
-}
-
-footer div.wrap div.sangdam h2 {
-  
-}
-
-footer div.wrap div.sangdam h2::before {
-  content: "";
-  width: 20px;
-  height: 18px;
-  display: inline-block;
-  background-image: url(../img/svg/envelope-regular.svg);
-  background-repeat: no-repeat;
-  vertical-align: -4px;
-  margin-right: 5px;
-}
-
-footer div.wrap div.sangdam p {
-  
-}
-
-footer div.wrap div.sangdam form {
-  margin-top: 10px;
-  display: grid;
+#footer .wrap ul li:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
   gap: 10px;
-  grid-template-columns: 1fr 60px;
-  grid-template-rows: auto auto auto auto;
 }
 
-footer div.wrap div.sangdam form * {
+#footer .wrap ul li:nth-of-type(1) h2 {
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#footer .wrap ul li:nth-of-type(1) p {
+  color: #909090;
+  font-size: 14px;
+}
+
+#footer .wrap ul li:nth-of-type(1) address {
+  color: #909090;
+  font-size: 14px;
+}
+
+#footer .wrap ul li:nth-of-type(1) a {
+  display: flex;
+  align-items: center;
+  color: #909090;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+#footer .wrap ul li:nth-of-type(1) a::before {
+  content: '';
+  width: 20px;
+  height: 20px;
   display: block;
+  margin-right: 5px;
+  background-image: url(../img/svg/envelope-solid.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-footer div.wrap div.sangdam form input {
-  grid-column: 1 / span 2;
-  grid-row: 1;
-  padding: 10px;
+#footer .wrap ul li:nth-of-type(1) a:hover {
+  color: #333;
+}
+
+#footer .wrap ul li:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer .wrap ul li:nth-of-type(2) h3 {
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 16px;
+}
+
+#footer .wrap ul li:nth-of-type(2) h3::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-right: 5px;
+  background-image: url(../img/svg/envelope-regular.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#footer .wrap ul li:nth-of-type(2) p {
+  font-size: 14px;
+  color: #909090;
+  line-height: 1.7;
+  margin: 5px 0;
+}
+
+#footer .wrap ul li:nth-of-type(2) input {
+  padding: 7px 12px 5px;
+  font-size: 13px;
+  color: #909090;
   border: 1px solid #ccc;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
 }
 
-footer div.wrap div.sangdam form textarea {
-  grid-column: 1 / span 2;
-  grid-row: 2;
-  border: 1px solid #ccc;
-  padding: 10px;
-}
-
-footer div.wrap div.sangdam form label {
-  grid-column: 1 / span 2;
-  grid-row: 3;
-}
-
-footer div.wrap div.sangdam form label * {
-  display: inline;
-}
-
-footer div.wrap div.sangdam form label input {
-  width: 15px;
-  height: 15px;
-  vertical-align: -1px;
-}
-
-footer div.wrap div.sangdam form label a {
-  text-decoration: underline;
-}
-
-footer div.wrap div.sangdam form input {
-  grid-column: 1 / span 2;
-  grid-row: 1;
-}
-
-footer div.wrap div.sangdam form input[type="email"],
-footer div.wrap div.sangdam form button {
-  display: inline;
-  grid-column: 1 / span 2;
-  grid-row: 4;
-}
-
-footer div.wrap div.sangdam form button {
-  grid-column: 2;
-  grid-row: 4;
-  background-color: #333;
-  border: none;
-}
-
-footer div.wrap div.sangdam form button a {
+#footer .wrap ul li:nth-of-type(2) input:focus {
+  outline: none;
+  background-color: #1cccca;
   color: #fff;
 }
 
-footer div.wrap div.guide {
-  grid-column: 3;
-  grid-row: 1 / span 4;
+#footer .wrap ul li:nth-of-type(2) textarea {
+  resize: none;
+  padding: 7px 12px 5px;
+  height: 78px;
+  font-size: 13px;
+  color: #909090;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
 }
 
-footer div.wrap div.guide h2 {
-  
+#footer .wrap ul li:nth-of-type(2) textarea:focus {
+  outline: none;
+  background-color: #1cccca;
+  color: #fff;
 }
 
-footer div.wrap div.guide ul {
-  
+#footer .wrap ul li:nth-of-type(2) label {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  color: #909090;
+  font-size: 14px;
 }
 
-footer div.wrap div.guide ul li {
-  
-}
-
-footer div.wrap div.guide ul li :nth-child(2) {
-  margin: 20px 0;
-}
-
-footer div.wrap div.guide ul li h3 {
-  
-}
-
-footer div.wrap div.guide ul li h3::before {
-  content: "";
-  width: 20px;
-  height: 18px;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: contain;
-  vertical-align: -5px;
+#footer .wrap ul li:nth-of-type(2) label input {
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
   margin-right: 5px;
 }
 
-footer div.wrap div.guide ul li:nth-child(1) h3::before {
+#footer .wrap ul li:nth-of-type(2) label a {
+  text-decoration: underline;
+  color: #909090;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+#footer .wrap ul li:nth-of-type(2) label a:hover {
+  color: #333;
+}
+
+#footer .wrap ul li:nth-of-type(2) .mail {
+  display: flex;
+}
+
+#footer .wrap ul li:nth-of-type(2) .mail input {
+  padding: 7px 12px 5px;
+  font-size: 13px;
+  color: #909090;
+  border: 1px solid #ccc;
+  width: calc(100% - 62px);
+  height: 35px;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+#footer .wrap ul li:nth-of-type(2) .mail input:focus {
+  outline: none;
+  background-color: #1cccca;
+  color: #fff;
+}
+
+#footer .wrap ul li:nth-of-type(2) .mail button {
+  all: unset;
+  padding: 7px 12px 5px;
+  transition: all 0.2s ease-in-out;
+  font-size: 13px;
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+  width: 62px;
+  height: 35px;
+  box-sizing: border-box;
+}
+
+#footer .wrap ul li:nth-of-type(2) .mail button:hover {
+  background-color: #1cccca;
+  border-color: #1cccca;
+}
+
+#footer .wrap ul li:nth-of-type(3) {
+
+}
+
+#footer .wrap ul li:nth-of-type(3) div {
+  height: calc(100% / 3);
+}
+
+#footer .wrap ul li:nth-of-type(3) div:nth-of-type(1) {
+
+}
+
+#footer .wrap ul li:nth-of-type(3) div:nth-of-type(1) h3 {
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 16px;
+}
+
+#footer .wrap ul li:nth-of-type(3) div:nth-of-type(1) h3::before {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
   background-image: url(../img/svg/clock-regular.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-footer div.wrap div.guide ul li:nth-child(2) h3::before {
+#footer .wrap ul li:nth-of-type(3) div:nth-of-type(1) p {
+  font-size: 14px;
+  color: #909090;
+  line-height: 1.7;
+}
+
+#footer .wrap ul li:nth-of-type(3) div:nth-of-type(2) {
+
+}
+
+#footer .wrap ul li:nth-of-type(3) div:nth-of-type(2) h3 {
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 16px;
+}
+
+#footer .wrap ul li:nth-of-type(3) div:nth-of-type(2) h3::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
   background-image: url(../img/svg/calculator-solid.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-footer div.wrap div.guide ul li:nth-child(3) h3::before {
+#footer .wrap ul li:nth-of-type(3) div:nth-of-type(2) p {
+  font-size: 14px;
+  color: #909090;
+}
+
+#footer .wrap ul li:nth-of-type(3) div:nth-of-type(3) {
+
+}
+
+#footer .wrap ul li:nth-of-type(3) div:nth-of-type(3) h3 {
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 16px;
+}
+
+#footer .wrap ul li:nth-of-type(3) div:nth-of-type(3) h3::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
   background-image: url(../img/svg/credit-card-regular.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-footer div.wrap div.guide ul li p {
-  
+#footer .wrap ul li:nth-of-type(3) div:nth-of-type(3) p {
+  font-size: 14px;
+  color: #909090;
 }
 
-footer div.wrap p.copyright {
-  grid-column: 1 / span 3;
-  grid-row: 5;
-  justify-self: center;
-  /* align-self: center; */
-  width: calc(100vw - 17px);
-  text-align: center;
-  border-top: 1px solid #000;
-  /* margin-left: calc((100vw - 17px - 1170px) / -2); */
+#footer .wrap .copyright {
+  height: 60px;
+  border-top: 1px solid #909090;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
 }
 
-footer a.top {
+#footer .wrap .copyright p {
+  font-size: 11px;
+}
+
+#footer .top-bg {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
   width: 40px;
   height: 40px;
-  background-image: url(../img/svg/chevron-up-solid.svg);
-  background-size: 30px, 40px;
-  background-repeat: no-repeat;
-  background-color: #171717;
-  background-position: center;
-  opacity: 0.6;
-  position: fixed;
-  right: 8px;
-  bottom: 10px;
-  font-size: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
 }
 
+#footer .top-bg .top {
+  font-size: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/svg/chevron-up-solid.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
